@@ -8,7 +8,7 @@ another directory using hard links in a format ready for Kodi.
 
 ## Running
 
-`docker run -d --name filebot -v media:/media -v data:/data phrontizo/filebot-rpi:latest`
+`docker run -d --name filebot --restart always -v /media:/media -v filebot_data:/data phrontizo/filebot-rpi:latest`
 
 I use this on a Raspberry Pi 3B+, running LibreElec, with the Docker addon and Deluge in a separate container.
 

@@ -3,7 +3,7 @@ FROM arm32v7/openjdk:8-jre
 MAINTAINER Kiril Dunn <kiril@phrontizo.com>
 
 RUN apt-get update && \
-    apt-get install -y \
+    apt-get install -y --no-install-recommends \
                     inotify-tools \
                     libjna-java \
                     file && \
